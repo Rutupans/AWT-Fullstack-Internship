@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>position </title>
+ <style>
+  .box1 {
+   border: 2px solid rgb(254, 252, 252);
+   height: 100px;
+   width: 100px;
+   display: inline-block;
+   margin-top: 20px;
+  }
+  #box3{
+   position: relative;
+   left: 40px;
+   top: 25px;
+   animation-duration: 2s black; 
+   } 
+  #box2{
+   position: absolute;
+   left: 40px;
+   top: 25px;
+   background-color: #d64242;
+   
+   
+  }
+  @keyframes kuldip {
+  from {background-color: red;}
+  to {background-color: yellow;}
+}
+  .container{
+   background-color: #742fc4;
+   border: 2px solid green;
+   height: 1000px;
+   position: sticky;
+   
+  }
+  div#box3 {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(156, 238, 40);
+  animation-name: kuldip;
+  animation-duration: 7s;
+  position:sticky;
+}
+#box4{
+ position: fixed;
+ top: 5px;
+}
+
+ </style>
+</head>
+
+<body>
+ <div class="container">
+ <div id="box1" class="box1"></div>
+ <div id="box2" class="box1"></div>
+ <div id="box3" class="box1"></div>
+ <div id="box4" class="box1"></div>
+</div>
+</body>
+
+</html>

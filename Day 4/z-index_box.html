@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>4boxes z-index</title>
+ <style>
+   /* .box1{
+    display: inline-block;
+    border: 2px solid rgb(252, 246, 246);
+    height: 100px;
+    width: 50px;
+    background-color: #53497a;
+   } */
+   #box1{
+    background-color: #983232;
+    height: 80px;
+    width: 80px;
+    top: 70px;
+    position:relative;
+    z-index: 1;
+   }
+   #box2{
+    background-color: #1aaa3a;
+    height: 80px;
+    width: 80px;
+    /* display: none; */
+    /* we can use visibility but at that time it can be reserved a storage  */
+   }
+   #box3{
+    background-color: #d2f04c;
+    height: 80px;
+    width: 80px;
+   }
+   #box4{
+    background-color: #440cec;
+    height: 80px;
+    width: 80px;
+   }
+ </style>
+</head>
+<body>
+  <div id="box1" class="box1"></div>
+  <div id="box2" class="box1"></div>
+  <div id="box3" class="box1"></div>
+  <div id="box4" class="box1"></div>
+</body>
+</html>
