@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        .cont {
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container cont">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAbNyockRVo4PCdwihKpQ35xkuj3mDhA1USDQJABfBe3Al8vMIBVK5BQmp7Z7ZHj92vWk&usqp=CAU"
+            alt="" height="100px" weight="100px" data-bs-toggle="tooltip" data-bs-placement="up" title="top!">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT93Oolf6j7J_9_KuQyC6dQGNGJ7cAcMA4AgmY0VzJMEvdUgI9qiM4kB6hlhFVpCgK6L-g&usqp=CAU"
+            alt="" height="100px" weight="100px" data-bs-toggle="tooltip" data-bs-placement="bottom" title="bottom!">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREoPB6rOWTt4NsLd5APFftdlVFsnc_Y52CnnPlgGTWpWhVFU1zMrJFv4m8F8M00ubPFBI&usqp=CAU"
+            alt="" height="100px" weight="100px" data-bs-toggle="tooltip" data-bs-placement="left" title="left!">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoa0aQGp6Bs0LRXuPmOUnVhekCJzuyoKAkpUhpjyWeCSgk_AfDyZabv_YyVMsRsLnnMSQ&usqp=CAU"
+            alt="" height="100px" weight="100px" data-bs-toggle="tooltip" data-bs-placement="right" title="right!">
+    </div>
+
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function(tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+    </script>
+
+</body>
+
+</html>
