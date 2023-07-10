@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script</title>
+    <style>
+        .part2{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 95vh;
+            width: 95vw;
+            flex-direction: column;
+        }
+        .part2 button{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: fixed;
+            border-top-right-radius: 12px;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 12px;
+            border-bottom-right-radius: 5px;
+            border: 2px solid black;
+            background: rgba(141, 140, 140, 0.361);
+            padding: 20px;
+            margin-top: 80px;
+        }
+        .part2 button:hover{
+            animation: anime 0.5s infinite;
+        }
+        @keyframes anime {
+            0%{
+                background: rgba(234, 155, 155, 0.505);
+            }
+            25%{
+                background: rgba(204, 234, 155, 0.505);
+            }
+            50%{
+                background: rgba(155, 234, 218, 0.505);
+            }
+            75%{
+                background: rgba(155, 205, 234, 0.505);
+            }
+            100%{
+                background: rgba(210, 155, 234, 0.505);
+            }
+        }
+    </style>
+</head>
+<body>
+      <!-- toggle -->
+      <div class="part2">
+        <p id="tog1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, totam.</p>
+        <button type="button" onclick="tog()">click</button>
+    </div>
+</body>
+
+<script>
+    function tog() {
+        var x = document.getElementById("tog1");
+        if (x.style.display == "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+</script>
+</html>

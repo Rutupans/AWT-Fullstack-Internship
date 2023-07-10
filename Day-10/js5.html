@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script</title>
+</head>
+
+<body>
+    <p id="demo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium, temporibus!</p>
+    <button type="button" onclick="func1()">Click</button>
+    <script>
+        document.write(10+10)
+    </script>
+</body>
+<script>
+    function func1() {
+        var x = document.getElementById("demo");
+        if (x.innerHTML == "Paragraph changed.") {
+            x.innerHTML = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium, temporibus!";
+        } else {
+            x.innerHTML = "Paragraph changed.";
+        }
+    }
+</script>
+
+</html>
