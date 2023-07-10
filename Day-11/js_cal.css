@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: url(https://dog.ceo/img/dog-api-fb.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  #calculator {
+    margin: 0 auto;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    background: white;
+  }
+  input[type="text"]{
+    height: 40px;
+    margin: 10px;
+    /* border-top-left-radius: 12px; */
+    border-top-right-radius: 24px;
+    border-bottom-left-radius: 24px;
+    /* border-bottom-right-radius: 12px; */
+    animation: anime 0.5s infinite;
+    text-align: center;
+  }
+  input[type="button"] {
+    width: 80px;
+    height: 50px;
+    font-size: 20px;
+    margin: 5px;
+    /* border-top-left-radius: 12px; */
+    border-top-right-radius: 24px;
+    border-bottom-left-radius: 24px;
+    /* border-bottom-right-radius: 12px; */
+    animation: anime 0.5s infinite;
+  }
+  input[type="button"]:hover{
+    border-top-left-radius: 24px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 24px;
+  }
+  @keyframes anime {
+    0%{
+        background-color: rgba(132, 255, 255, 0.678);
+    }
+    25%{
+        background-color: rgba(132, 196, 255, 0.678);
+    }
+    50%{
+        background-color: rgba(132, 171, 255, 0.678);
+    }
+    75%{
+        background-color: rgba(251, 132, 255, 0.678);
+    }
+    100%{
+        background-color: rgba(255, 185, 132, 0.678);
+    }
+  }
